@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Times Mobile MVC</title>
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/components.css">
+</head>
+
+<body>
+    <h1>Times Mobile</h1>
+    <div id="componentsContainer" class="componentsContainer">
+        <div data-component-name="sampleComponent" data-url="/data/sampleComponent.json"></div>
+    </div>
+    <!-- Handlebars templates -->
+    <script id="sampleComponentTemplate" type="text/x-handlebars-template">
+        <div class="sampleComponent">
+            <h1 class="sampleTitle">{{title}}</h1>
+            <div class="sampleDescription">{{description}}</div>
+        </div>
+    </script>
+    <!-- Handlebars templates -->
+    <!-- cdn scripts-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <!-- cdn scripts-->
+    <!-- locally served vendor scripts -->
+    <!-- locally served vendor scripts -->
+    <!-- app scripts-->
+    <script type="text/javascript" src="./namespaces.js"></script>
+    <script type="text/javascript" src="./scripts/serviceManager.js"></script>
+    <script type="text/javascript" src="./scripts/utils.js"></script>
+    <script type="text/javascript" src="./scripts/model.js"></script>
+    <script type="text/javascript" src="./scripts/view.js"></script>
+    <script type="text/javascript" src="./scripts/controller.js"></script>
+    <script type="text/javascript" src="./scripts/components/sampleComponent.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <!-- app scripts-->
+</body>
+
+</html>
